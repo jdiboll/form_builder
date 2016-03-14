@@ -5,7 +5,24 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="app"></div>
+  <div class="app">	
+  	<form>
+  		<div class="input">
+			<input type=${user.type} id=${user.id} placeholder=${user.label}/>
+			</div>
+			<div class="select">
+			<label for=${user.id}></label>
+			<select id=${user.id}/>
+				<option value=${user.value}>${user.label}</option>
+			</div>
+			<div class="text">
+			<textarea name=${user.type} rows="10 cols="50>${user.label}</textarea>
+
+
+
+
+  	</form>
+  </div>
   <script src="js/bundle.js"></script>
 </body>
 </html>
