@@ -1,1 +1,27 @@
 /* CSS Entry Point */
+header {
+	background-color: #3e8acc;
+	height: 100px;
+	width: 500px;
+	color: white;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+footer {
+	background-color: #c8def1;
+	width: 520px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+}
+button {
+	border-radius: 3px;
+	border: 0;
+	font-size: 17px;
+	color: white;
+	background-color: #3c8acc;
+	margin-left: 20px;
+	height: 40px;
+}
