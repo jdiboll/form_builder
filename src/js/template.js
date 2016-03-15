@@ -11,7 +11,13 @@ export function info(select) {
 		<div class="select">
 			<label for=${user.id}></label>
 			<select id=${user.id}/>
-				<option value=${user.value}>${user.label}</option>
+			<option value="EN">English</option>
+			<option value="FR">French</option>
+			<option value="SR">Spanish</option>
+			<option value="CH">Chinese</option>
+			<option value="JP">Japanese</option>
+
+
 			</div>
 			`}
 
