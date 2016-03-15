@@ -1,29 +1,38 @@
-export function info(input) {
+export function data(data) {
 	return `
-		<div class="input">
-			<input type=${user.type} id=${user.id} />
-			<label for=${user.id}><span>${user.label}</span</label>
-			</div>
+			<label for"${data.id}">${data.label}</label>
+			<input type="${data.type}" id="${data.id}">
+			
 			`}
 
-export function info(select) {
-	return `
-		<div class="select">
-			<label for=${user.id}></label>
-			<select id=${user.id}/>
-			<option value="EN">English</option>
-			<option value="FR">French</option>
-			<option value="SR">Spanish</option>
-			<option value="CH">Chinese</option>
-			<option value="JP">Japanese</option>
 
 
-			</div>
+export function select(select) {
+
+	var optionTemplates = options.map(function({label, value}) {
+			return `<option value="${value}">${label}</option>`
+		});
+
+			var optionTemplateString = optionTemplates.join('');
+
+			return `
+
+			<label for="${select.id}">${select.label}</label>
+			<select id="${select.id}">
+			${optionTemplateString}
+			</select>
+			
+
 			`}
 
-export function info(area) {
-	return `
-		<div class="text">
-			<textarea name=${user.type} rows="10 cols="50>${user.label}</textarea>
+export function area(area) {
+	return 	`
+			<textarea id="${area.id}"" rows="10" cols="50">${area.label}</textarea>
 			</div>
+
+
 			`}
+
+
+
+

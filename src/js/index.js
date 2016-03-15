@@ -3,22 +3,21 @@ import $ from 'jquery';
 
 import items from './items';
 
-import { input, select, area } from './template';
+import { data, select, area } from './template';
 
-var $app = $('.app');
+var $form = $('form');
 
-items.forEach(function(item) {
-	if (item.type === "textarea") {
-		template === area;
-	} else if (item.type === "select") {
-		template === select;
-	} else {
-		template === input;
+items.forEach(function(element) {
+	if (element.type === "textarea") {
+		console.log($form.append(area(element)))
+	} else if (element.type === "select") {
+		
 	}
+	// var html = template(element);
 
-	var form = template(item);
-	$app.append ( form );
 });
+
+// $form.append(html);
 
 
 
