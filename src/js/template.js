@@ -8,6 +8,7 @@ export function data(data) {
 
 
 export function select(select) {
+	var options = select.options;
 
 	var optionTemplates = options.map(function({label, value}) {
 			return `<option value="${value}">${label}</option>`
@@ -21,6 +22,7 @@ export function select(select) {
 			<select id="${select.id}">
 			${optionTemplateString}
 			</select>
+			<br><br>
 			
 
 			`}
@@ -28,6 +30,7 @@ export function select(select) {
 export function area(area) {
 	return 	`
 			<textarea id="${area.id}"" rows="10" cols="50">${area.label}</textarea>
+			<br><br>
 			</div>
 
 
